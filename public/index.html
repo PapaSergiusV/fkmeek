@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4 lab</title>
+</head>
+
+<body>
+  <h2>4th lab</h2>
+  <h3>Data:</h3>
+  <table border="1">
+    <thead>
+      <th>Login</th>
+      <th>Password</th>
+      <th>Secret</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>user1</td>
+        <td>pass1</td>
+        <td>secret1</td>
+      </tr>
+      <tr>
+        <td>user2</td>
+        <td>pass2</td>
+        <td>secret2</td>
+      </tr>
+      <tr>
+        <td>user3</td>
+        <td>pass3</td>
+        <td>secret3</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <h3>Unsafe form</h3>
+  <p>To get all secrets insert into the first field `user1' OR id > 0;--`</p>
+  <form action="/secret" method="post">
+    <label for="login">Login</label>
+    <input type="text" id="login" name="login" />
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" />
+    <button type="submit">Get secret</button>
+  </form>
+  <hr>
+  <h3>Safe form</h3>
+  <form action="/secret_safe" method="post">
+    <label for="login">Login</label>
+    <input type="text" id="login" name="login" />
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" />
+    <button type="submit">Get secret</button>
+  </form>
+  <hr>
+</body>
+
+</html>

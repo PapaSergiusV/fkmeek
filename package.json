@@ -1,0 +1,15 @@
+{
+  "name": "4lab",
+  "version": "1.0.0",
+  "description": "4 lab about SQL injection",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Sergei Ponomarev 3.8",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite3": "^4.0.0"
+  }
+}
